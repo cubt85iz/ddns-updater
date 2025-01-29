@@ -32,7 +32,6 @@ if [ "$WAN_IPV4" != "$DOMAIN_IPV4" ]; then
         \"ttl\": 3600,
         \"type\": \"A\"
       }"
-    echo "IPs are different"
 else
   echo "Domain IPv4 address is accurate. Skipping update."
 fi
