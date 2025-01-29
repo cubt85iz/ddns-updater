@@ -1,0 +1,9 @@
+[Unit]
+Description=Periodically update dynamic DNS address for Cloudflare
+
+[Timer]
+OnBootSec=15min
+OnUnitInactiveSec=30min
+
+[Install]
+WantedBy=timers.target
