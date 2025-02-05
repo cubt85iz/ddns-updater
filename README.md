@@ -1,6 +1,6 @@
 # ddns-updater
 
-Uses `dig` to determine the WAN IPv4 address of the current computer and compares against the current IPv4 address the provided domain. If they differ, it executes a `curl` command to update the address of the provided domain.
+Uses `dig` to determine the WAN IPv4 & IPv6 addresses of the current network and compares against the current IPv4 & IPv6 addresses for the provided domain. If they differ, it executes a `curl` command to update the addresses of the provided domain.
 
 ## Required variables
 
