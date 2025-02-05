@@ -6,12 +6,11 @@ Uses `dig` to determine the WAN IPv4 address of the current computer and compare
 
 There are a few variables that need to be defined in order to update the address for a domain.
 
-- `DOMAIN`: 
-- `ZONE_ID`:
-- `DNS_RECORD_ID`:
-- `CLOUDFLARE_EMAIL`:
-- `CLOUDFLARE_API_KEY`:
-- `PROXIED`:
+- `DOMAIN`: Domain to be updated (ex. mysub.domain.com)
+- `ZONE_ID`: Zone identifier for domain
+- `CLOUDFLARE_EMAIL`: Cloudflare service email
+- `CLOUDFLARE_API_KEY`: Cloudflare Global API key
+- `PROXIED`: Proxied? `true` or `false`
 
 If deploying using quadlet, I'd suggest using a systemd drop-in for these values. Sample container and timer files are located in the `quadlet` folder.
 
